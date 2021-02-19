@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import  "./Header.css";
 import TinderIcon from './images/tinder-logo.png';
 import PersonIcon from '@material-ui/icons/Person';
