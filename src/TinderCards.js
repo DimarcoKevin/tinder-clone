@@ -15,13 +15,25 @@ function TinderCards() {
         }
     ]);
 
+    const swiped = (nameToDelete) => {
+        console.log("Removing: " + nameToDelete);
+    } 
+
+    const outOfFrame = (name) => {
+        console.log(name + " has left thescreen");
+    }
+
     return (
         <div className="tinderCards">
             <div className="tinderCards__cardContainer">
             {people.map((person) => (
-                <TinderCard>
-                    
-                </TinderCard>
+                <TinderCard
+                    className = "swipe"
+                    key = {person.name}
+                    preventSwipe = {["up", "down"]}
+                    onSwipe = {(dir) => swiped(dir, person.name)}
+                    onCardLeftScreen = {() => outOfFrame(person.name)}
+                ></TinderCard>
             ))}
             </div>    
         </div>
