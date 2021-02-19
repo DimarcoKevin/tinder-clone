@@ -1,8 +1,9 @@
 import React from 'react';
+import './SwipeButtons.css';
 
 const SwipeButtons = () => {
     return (
-        <div>
+        <div className="swipeButtons">
             
         </div>
     );
