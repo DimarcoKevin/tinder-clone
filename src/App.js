@@ -5,6 +5,11 @@ function App() {
     
         <div className = "app" > 
             <h1>Tinder-Clone</h1>
+
+            {/* Header */}
+            {/* Tinder Card */}
+            {/* Buttons */}
+
         </div>
     );
 
