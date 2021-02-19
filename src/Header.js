@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import  "./Header.css";
 import TinderIcon from './images/tinder-logo.png';
 import PersonIcon from '@material-ui/icons/Person';
+import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 import IconButton from '@material-ui/core/IconButton';
 
 class Header extends Component {
@@ -16,6 +17,10 @@ class Header extends Component {
                     className="header__logo"
                     src={TinderIcon}
                 />
+
+                <IconButton> 
+                    <QuestionAnswerIcon fontSize="large" className="header__icon" />
+                </IconButton>
                 
 
             </div>
